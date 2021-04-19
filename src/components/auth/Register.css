@@ -1,0 +1,58 @@
+.register-container {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-form {
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+  background: #225994;
+}
+.register-form h3 {
+  text-align: center;
+  color: #fff;
+}
+
+.register-container form {
+  padding: 10%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+
+.register-form .btnSubmit {
+  background-color: #fff;
+  color: #225994;
+  transition: all 500ms;
+  outline: none;
+}
+
+.register-form .btnSubmit:hover {
+  background-color: #2676cc;
+  color: #fff;
+}
+.register-form .ForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.signup {
+  color: #fff;
+}
+
+.signup:hover {
+  text-decoration: underline;
+}
