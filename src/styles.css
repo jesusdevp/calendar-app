@@ -1,0 +1,11 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container-calendar {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
