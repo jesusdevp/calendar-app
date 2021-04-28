@@ -16,6 +16,8 @@ export const AppRouter = () => {
           <Route path="/auth" component={AuthRouter} />
           <Route exact path="/" component={CalendarScreen} />
         </Switch>
+
+        <Redirect to="/" />
       </div>
     </Router>
   );
