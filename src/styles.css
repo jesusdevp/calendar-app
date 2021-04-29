@@ -66,8 +66,16 @@ body {
 .fab {
   border-radius: 100%;
   bottom: 25px;
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px;
   position: fixed;
   right: 25px;
+}
+
+.fab-danger {
+  bottom: 25px;
+  font-size: 20px;
+  position: fixed;
+  padding: 15px;
+  left: 25px;
 }
