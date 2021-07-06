@@ -10,9 +10,9 @@ import DateFnsUtils from "@date-io/date-fns";
 import { useSelector, useDispatch } from "react-redux";
 import { uiCloseModal } from "../../actions/ui";
 import {
-  eventAddNew,
   eventClearActiveEvent,
-  eventUpdated,
+  eventStartAddNew,
+  eventstartUpdate,
 } from "../../actions/events";
 
 const customStyles = {
@@ -112,18 +112,9 @@ export const CalendarModal = () => {
     }
 
     if (activeEvent) {
-      dispatch(eventUpdated(formValues));
+      dispatch(eventstartUpdate(formValues));
     } else {
-      dispatch(
-        eventAddNew({
-          ...formValues,
-          id: new Date().getTime(),
-          user: {
-            _id: "123",
-            name: "Jesus",
-          },
-        })
-      );
+      dispatch(eventStartAddNew(formValues));
     }
 
     setTitleValid(true);
